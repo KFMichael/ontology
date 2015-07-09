@@ -47,20 +47,23 @@
 <http://azkar.musee_Ontology.fr/rr/#zoneChronologique>
 	a amo:zoneChronologique;
 	dc:title "parcours chronologique";
+	amo:compose_of_scene <http://azkar.musee_Ontology.fr/rr/#La tranchee>  ;
 	amo:description "parcours crhonologique".
+
+
+	
 	
 <http://azkar.musee_Ontology.fr/rr/#zoneThematique>
 	a amo:zoneThematique;
-	dc:title "parcours thématique";
-	amo:description "parcours thématique".
-	
-
+	dc:title "parcours thematique";
+	amo:description "parcours thematique";
+	amo:compose_of_scene [ <http://azkar.musee_Ontology.fr/rr/#guerreNouvelle>  <http://azkar.musee_Ontology.fr/rr/#mobilisation>] .
 
 <http://azkar.musee_Ontology.fr/rr/#maquetteDuMuseeDeMeaux>
 	a amo:maquette;
 	dc:title "maquette du musee de meaux";
 	amo:description "le musee possède deux types de parcours , un parcours chronologique et des salles thématiques";
-	amo:compose_of [ <http://azkar.musee_Ontology.fr/rr/#zoneChronologique>  <http://azkar.musee_Ontology.fr/rr/#zoneThematique>  ] .
+	amo:compose_of_zone [ <http://azkar.musee_Ontology.fr/rr/#zoneChronologique>  <http://azkar.musee_Ontology.fr/rr/#zoneThematique>  ] .
 
 
 
