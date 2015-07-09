@@ -6,19 +6,16 @@
 
 
 <http://azkar.musee_Ontology.fr/rr/#Verney>
-		a foaf:Person;
-		foaf:gender "male";
-		foaf:firstName "Jean-Pierre";	
-		foaf:lastName "Verney";
-		foaf:name "Verney";
-		foaf:age "69";
-		foaf:birthday "00-46" ;
-		dc:description <https://fr.wikipedia.org/wiki/Jean-Pierre_Verneyhttps://fr.wikipedia.org/wiki/Jean-Pierre_Verney> ;
-		foaf:img <https://upload.wikimedia.org/wikipedia/commons/6/6d/Jean-Pierre_Verney_par_Claude_Truong-Ngoc_avril_2014.jpg?download> .
+	a foaf:Person;
+	foaf:gender "male";
+	foaf:firstName "Jean-Pierre";	
+	foaf:lastName "Verney";
+	foaf:name "Verney";
+	foaf:age "69";
+	foaf:birthday "00-46" ;
+	dc:description <https://fr.wikipedia.org/wiki/Jean-Pierre_Verneyhttps://fr.wikipedia.org/wiki/Jean-Pierre_Verney> ;
+	foaf:img <https://upload.wikimedia.org/wikipedia/commons/6/6d/Jean-Pierre_Verney_par_Claude_Truong-Ngoc_avril_2014.jpg?download> .
 	
-
-
-
 
 
 <http://azkar.musee_Ontology.fr/rr/#Mortier de tranchée rudimentaire>
@@ -39,3 +36,8 @@
 
 
 
+<http://azkar.musee_Ontology.fr/rr/#La tranchee>
+	a amo:SceneMusee;
+	dc:title "tranchee";
+	amo:historicalMessage "D abord simples protections contre le feu de l ennemi, les tranchées deviennent un lieu de vie pendant quatre ans pour des millions d hommes.Au début de la guerre de position, les Français pensent que la guerre va très vite se terminer et gardent l esprit offensif. Leurs tranchées sont peu ou pas organisées, elles sont censées n être que provisoires. Du côté des Allemands, c’est l inverse, les tranchées sont un lieu de vie qu’il convient d’aménager pour durer dans le temps. Cette différence se retrouve à travers le mépris que les Français, qui changent souvent de secteur, ont pour leurs lieux de vie, alors que les Allemands, plus sédentaires, sont plus vigilants àl aménagement et au respect de leurs tranchées. Il faudra donc du temps pour que l’état-major français prenne conscience de l’importance des tranchées et donne des instructions pour creuser, étayer, aménager… les positions. L aménagement des tranchées est dans aucun doute le reflet de la mentalité de ses occupants".
+	
