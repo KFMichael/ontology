@@ -31,7 +31,7 @@
 	amo:consists_of "metal","bois";
 	amo:technique "métal";
 	amo:prefixe_musee "CAPM";
-	amo:numero_inventaire "2006-1-6514";
+	amo:numero_inventaire "2006.1.6514";
 	amo:has_height "34";
 	amo:has_depth "22";
 	amo:has_width "46".
