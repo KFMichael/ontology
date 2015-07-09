@@ -21,19 +21,20 @@
 
 
 
-<http://azkar.musee_Ontology.fr/rr/#Mortier de tranchée artisanal>
+<http://azkar.musee_Ontology.fr/rr/#Mortier de tranchée rudimentaire>
 	dc:title "mortier";
 	amo:domaine "vie militaire", "france";
 	amo:discipline "ethnologie";
 	amo:denomination "mortier";
 	amo:typologie "tye cellerier";
-	dc:description "Mortier de tranchée artisanal dit Celerier de circonstance fait avec un obus allemand de 77" ;
-	amo:consists_of "metal";
+	dc:description "Ce mortier de tranchée de type Cellerier est une petit mortier rudimentaire. Il est réalisé à partir d'un obus allemand de 77 transformé en bouche à feu et monté sur un socle en bois Il possède également son projectile " ;
+	amo:consists_of "metal","bois";
 	amo:technique "métal";
-	
-	amo:has_height "27";
-	amo:has_depth "52.5";
-	amo:has_width "27".
+	amo:prefixe_musee "CAPM";
+	amo:numero_inventaire "2006-1-6514";
+	amo:has_height "34";
+	amo:has_depth "22";
+	amo:has_width "46".
 
 
 
