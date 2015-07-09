@@ -22,6 +22,7 @@
 
 
 <http://azkar.musee_Ontology.fr/rr/#Mortier de tranchée rudimentaire>
+	a amo:ObjectMusee;
 	dc:title "mortier";
 	amo:domaine "vie militaire", "france";
 	amo:discipline "ethnologie";
