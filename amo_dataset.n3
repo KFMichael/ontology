@@ -25,7 +25,7 @@
 	amo:domaine "vie militaire", "france";
 	amo:discipline "ethnologie";
 	amo:denomination "mortier";
-	amo:typologie "tye cellerier";
+	amo:typologie "type cellerier";
 	dc:description "Ce mortier de tranchée de type Cellerier est une petit mortier rudimentaire. Il est réalisé à partir d'un obus allemand de 77 transformé en bouche à feu et monté sur un socle en bois Il possède également son projectile " ;
 	amo:consists_of "metal","bois";
 	amo:technique "métal";
@@ -34,6 +34,24 @@
 	amo:has_height "34";
 	amo:has_depth "22";
 	amo:has_width "46".
+
+
+<http://azkar.musee_Ontology.fr/rr/#Mitrailleuse_de_Saint-Etienne>
+	a amo:ObjectMusee;
+	amo:ObjectNumber "5";
+	dc:title "Mitrailleuse_de_Saint-Etienne";
+	amo:domaine "vie militaire", "autriche hongrie";
+	amo:discipline "ethnologie";
+	amo:denomination "mitrailleuse";
+	amo:typologie "modèle 1907";
+	dc:description "avec trépied catégorie de l arme : 8ème catégorie (neutralisée)N°Serie: 4629, Il s agit du modèle 1907 modifié en 1912. En novembre 1918, l infanterie italienne s approprie cette mitrailleuse qui sera encore utilisée dans l entre-deux guerres." ;
+	amo:consists_of "metal";
+	amo:technique "métal";
+	amo:prefixe_musee "CAPM";
+	amo:numero_inventaire "2006.1.13623";
+	amo:has_height "54";
+	amo:has_depth "54";
+	amo:has_width "147".
 
 
 
