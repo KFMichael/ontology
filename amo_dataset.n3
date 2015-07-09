@@ -1,18 +1,39 @@
-@prefix amo:<http://azkar.musee_Ontology.fr/amo1>.
-@prefix rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
-@prefix foaf:<http://xmlns.com/foaf/0.1/>.
-@prefix dc:<http://purl.org/dc/elements/1.1/>.
-@prefix dcterms: <http://purl.org/dc/terms/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix amo: <http://azkar.musee_Ontology.fr/schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.0-draft-2015January.rdfs> .
 
 
-
-<http://amo1.azkar.musee_Ontology.fr/#Verney>
+<http://azkar.musee_Ontology.fr/rr/#Verney>
 		a foaf:Person;
 		foaf:gender "male";
-		foaf:firstName "Verney";	
-		foaf:lastName "Jean-Pierre";
+		foaf:firstName "Jean-Pierre";	
+		foaf:lastName "Verney";
 		foaf:name "Verney";
 		foaf:age "69";
-		foaf:birthday "00-46"
-		foaf:img <https://upload.wikimedia.org/wikipedia/commons/6/6d/Jean-Pierre_Verney_par_Claude_Truong-Ngoc_avril_2014.jpg?download>;
-		dcterms:description <https://fr.wikipedia.org/wiki/Jean-Pierre_Verney>;
+		foaf:birthday "00-46" ;
+		dc:description <https://fr.wikipedia.org/wiki/Jean-Pierre_Verneyhttps://fr.wikipedia.org/wiki/Jean-Pierre_Verney> ;
+		foaf:img <https://upload.wikimedia.org/wikipedia/commons/6/6d/Jean-Pierre_Verney_par_Claude_Truong-Ngoc_avril_2014.jpg?download> .
+	
+
+
+
+
+
+<http://azkar.musee_Ontology.fr/rr/#Mortier de tranchée artisanal>
+	dc:title "mortier";
+	amo:domaine "vie militaire", "france";
+	amo:discipline "ethnologie";
+	amo:denomination "mortier";
+	amo:typologie "tye cellerier";
+	dc:description "Mortier de tranchée artisanal dit Celerier de circonstance fait avec un obus allemand de 77" ;
+	amo:consists_of "metal";
+	amo:technique "métal";
+	
+	amo:has_height "27";
+	amo:has_depth "52.5";
+	amo:has_width "27".
+
+
+
