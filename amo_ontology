@@ -1,0 +1,65 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://azkar.musee_Ontology.fr/schema#> .
+
+
+
+:ObjectMusee a rdfs:Class.
+:SceneMusee a rdfs:Class .
+:zoneChronologique a rdfs:Class .
+:zoneThematique a rdfs:Class .
+:maquette  a rdfs:Class .
+
+
+
+
+:ObjectNumber a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:domaine a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:discipline a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:denomination a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:typologie a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:consists_of a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:technique a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:prefixe_musee a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:numero_inventaire a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:has_height a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:has_height a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:has_height a rdf:Property ;
+  rdfs:domain :ObjectMusee .
+
+:compose_of_zone a rdf:Property ;
+  rdfs:domain :maquette ;
+  rdfs:range :zoneThematique ;
+  rdfs:range :zoneChronologique .
+
+:compose_of_scene a rdf:Property ;
+  rdfs:domain :zoneThematique ;
+  rdfs:domain :zoneChronologique ;
+  rdfs:range :SceneMusee .
+  
+:compose_of_object a rdf:Property ;
+  rdfs:domain :SceneMusee ;
+  rdfs:domain :ObjectMusee .
+  
