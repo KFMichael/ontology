@@ -1,0 +1,37 @@
+@prefix td:<http://td.unice.fr/td1>.
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix foaf:<http://xmlns.com/foaf/0.1/>.
+<http://td1.unice.fr/#Margot>
+	a  td:Femme;
+    foaf:firstName "Margot";	
+	foaf:age "32";
+	td:hasTaille "40";
+	td:hasChaussure "38";
+	td:hasMarie <http://td1.unice.fr/#Arthur>;
+	td:hasChild <http:td1/#Simon>,
+	            <http:td1/#Marie>;
+    td:hasMother <http://td1.unice.fr/Simone>;
+	td:hasProfession <http://td1.unice.fr/Profession>;
+	td:hasCollegue <http://td1.unice.fr/#Pierre>,
+	            <http://td1.unice.fr/#Alice>.
+				
+<http://td1.unice.fr/#Arthur> a td:Persone;
+         foaf:firstName "Arthur".
+
+<http://td1.unice.fr/#Simon> a td:Child;
+         foaf:firstName "Simon".
+		
+<http://td1.unice.fr/#Marie> a td:Child;
+         foaf:firstName "Marie".
+
+<http://td1.unice.fr/#Simone> a td:Mother;
+         foaf:firstName "Simon".
+		 
+<http://td1.unice.fr/#Pierre> a td:colleague;
+         foaf:firstName "Pierre".
+		 
+<http://td1.unice.fr/#Alice> a td:colleague;
+         foaf:firstName "Alice".
+		 
+<http://td1.unice.fr/Profession> a td:Profession;
+           td:name "enseignante".

@@ -1,0 +1,400 @@
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix : <http://zoomathia.unice.fr/tei.rdfs> .
+
+:TEI a rdfs:Class.
+
+:Header a rdfs:Class;
+	rdfs:label "teiHeader";
+	rdfs:comment "virtual title page of a TEI document. It contains metadata(information about the TEI document)".
+	
+:FileDescription a rdfs:Class;
+	rdfs:label "FileDesc";
+	rdfs:comment "bibliographic information".
+
+:TitleStatement  a rdfs:Class;
+	rdfs:label "titleStmt";
+	rdfs:comment "title and info about those responsible for intellectual content of the TEI document".
+	
+:EditionStatement a rdfs:Class.
+
+:PublicationStatement a rdfs:Class;
+	rdfs:label "publicationStmt";
+	rdfs:comment " info about the publication and distribution of the TEI document".
+
+:SourceDescription a rdfs:Class;
+    rdfs:label "sourceDesc";
+	rdfs:comment "describes the source from which the TEI document was created".
+	
+:Title a rdfs:Class;
+   rdfs:label "title";
+   rdfs:comment "title of document".
+   
+:Editor a rdfs:Class;
+	rdfs:label "editor";
+    rdfs:comment "mention de responsabilité secondaire pour un item bibliographique".
+
+:TitleStatement a rdfs:Class;
+    rdfs:label "titleStmt";
+	rdfs:comment" regroupe les informations sur le titre d’une œuvre et les personnes ou institutions responsables de son contenu intellectuel".
+   
+:ResponsableStatement a rdfs:Class;
+   rdfs:label "respStmt";
+   rdfs:comment "responsible for intellectual content of the TEI document".
+   
+:Responsable a rdfs:Class;
+   rdfs:label "persName ";
+   rdfs:comment "persName ".
+   
+:Responsability a rdfs:Class;
+   rdfs:label "resp";
+   rdfs:comment "resp".
+   
+:ProfileDescription a rdfs:Class;
+   rdfs:label "profileDesc";
+   rdfs:comment " fournit une description détaillée des aspects non bibliographiques du texte, notamment les langues utilisées et leurs variantes, les circonstances de sa production, les collaborateurs et leur statut".
+   
+:SourceDescription a rdfs:Class;
+   rdfs:label "sourceDesc";
+   rdfs:comment "écrit la source à partir de laquelle un texte électronique a été dérivé ou produit, habituellement une description bibliographique pour un texte numérisé pour un texte qui n'a aucune existence précédente".
+   
+:Front a rdfs:Class;
+   rdfs:label "front";
+   rdfs:comment "contient tout ce qui est au début du document, avant le corps du texte : page de titre, dédicaces, préfaces, etc. ".
+   
+:TitlePage a rdfs:Class;
+   rdfs:label "titlePage";
+   rdfs:comment "contient la page de titre d’un texte qui figure dans les parties liminaires".
+   
+:ByLine a rdfs:Class;
+   rdfs:label "byline";
+   rdfs:comment "indique la responsabilité principale pour une œuvre donnée sur la page de titre ou au début ou à la fin de l’œuvre.".
+   
+:Text a rdfs:Class;
+	rdfs:label "text";
+	rdfs:comment "contient un seul texte quelconque".
+	
+:Poisson a rdfs:Class;
+    rdfs:label"indexName=piscibus";
+	rdfs:comment "espéce de poissons".
+
+:Section a rdfs:Class;
+	rdfs:label "div type=section1";
+	rdfs:comment "contient une subdivision de deuxième niveau dans le texte prélimaire, dans le corps d’un texte ou dans le texte postliminaire".
+	
+:Paragraphe a rdfs:Class;
+	rdfs:label "p";
+	rdfs:comment "contient une subdivision de deuxième niveau dans le texte prélimaire, dans le corps d’un texte ou dans le texte postliminaire".
+
+:Body a rdfs:Class;
+	rdfs:label "body";
+	rdfs:comment "contient la totalité du corps d’un seul texte simple".
+	
+:Livre a rdfs:Class;
+	rdfs:label "div type=livre";
+	rdfs:comment "(division du texte) contient une subdivision dans le texte préliminaire, dans le corps d’un texte ou dans le texte postliminaire.".
+	
+:chapitre a rdfs:Class;
+	rdfs:label "div type=chapitre";
+	rdfs:comment "(division du texte) contient une subdivision dans le texte préliminaire, dans le corps d’un texte ou dans le texte postliminaire.".
+	
+:Citation a rdfs:Class;
+	rdfs:label "cit";
+	rdfs:comment "(citation) citation provenant d'un autre document comprenant la référence bibliographique de sa source".
+
+:Bibliographie a rdfs:Class;
+	rdfs:label "bibliographie";
+	rdfs:comment "contient une référence bibliographique".
+
+:Reference a rdfs:Class;
+    rdfs:label "ref";
+	rdfs:comment "(référence) définit une référence vers un autre emplacement, la référence étant éventuellement modifiée ou complétée par un texte ou un commentaire".
+
+:Segment a rdfs:Class;
+	rdfs:label "seg";
+	rdfs:comment "(segment quelconque) contient une unité de texte quelconque de niveau ‘segment’".
+	
+:Sourceinterne a rdfs:Class;
+	rdfs:label "source_interne";
+	rdfs:comment "".
+	  
+:Author a rdfs:Class;
+   rdfs:label "author";
+   rdfs:comment "author of document".
+
+:Oeuvre a rdfs:Class;
+    rdfs:label "Oeuvre";
+	rdfs:comment "définit une référence de type oeuvre".
+
+:Marqueur a rdfs:Class;
+	rdfs:label "identification";
+    rdfs:comment "".
+	
+:SourceInterne a rdfs:Class;
+	rdfs:label "identification";
+	rdfs:comment "".
+	
+:hasHeader a rdfs:Property ;
+  rdfs:domain :TEI ;
+  rdfs:range :Header.
+
+:hasFileDescription
+  a rdf:Property ;
+  rdfs:domain :Header ;
+  rdfs:range :FileDescription .
+  
+:hasTitleStatement
+  a rdf:Property ;
+  rdfs:domain :FileDescription ;
+  rdfs:range :TitleStatement .
+ 
+ :hasTitle
+  a rdf:Property ;
+  rdfs:domain :TitleStatement;
+  rdfs:range :Title.
+  
+
+:hasResponsableStatement
+  a rdf:Property ;
+  rdfs:domain :TitleStatement ;
+  rdfs:range :ResponsableStatement .
+  
+:hasResponsable
+  a rdf:Property ;
+  rdfs:domain :ResponsableStatement ;
+  rdfs:range :Responsable.
+
+:hasResponsability
+  a rdf:Property ;
+  rdfs:domain :ResponsableStatement ;
+  rdfs:range :Responsability.
+
+:hasPublicationStatment
+  a rdf:Property ;
+  rdfs:domain :FileDescription ;
+  rdfs:domain :Hedear;
+  rdfs:range :PublicationStatment .
+
+:hasSourceDescription
+  a rdf:Property ;
+  rdfs:domain :FileDescription ;
+  rdfs:range :SourceDescription .
+  
+:hasText
+  a rdf:Property ;
+  rdfs:domain :TEI ;
+  rdfs:range :Text .
+ 
+:hasBody
+  a rdf:Property ;
+  rdfs:domain :Text ;
+  rdfs:range :Body .
+  
+:hasBook
+  a rdf:Property ;
+  rdfs:domain :Body ;
+  rdfs:range :Livre.
+  
+:hasChapter
+  a rdf:Property ;
+  rdfs:domain :Livre ;
+  rdfs:range :Chapitre .
+  
+:hasNumber
+  a rdf:Property;
+  rdfs:comment "contient la numérotation des différentes sections".
+  
+:hasHead
+  a rdf:Property ;
+  rdfs:domain :Livre;
+  rdfs:domain :Chapitre ;
+  rdfs:domain :Paragraphe;
+  rdfs:comment "contient tout type d'en-tête, par exemple le titre d'une section".
+  
+  
+:hasCitation
+  a rdf:Property ;
+  rdfs:domain :Chapitre;
+  rdfs:domain :Paragraphe;
+  rdfs:range :Citation .
+
+:hasBibliographie
+  a rdf:Property ;
+  rdfs:domain :Citation ;
+  rdfs:range :Bibliographie .
+  
+:hasAuthor
+  a rdf:Property ;
+  rdfs:domain :TitleStatement ;
+  rdfs:domain :Bibliographie;
+  rdfs:range :Author .
+ 
+:hasReference
+  a rdf:Property ;
+  rdfs:domain :Bibliographie;
+  rdfs:range :Oeuvre .
+  
+:hasSegment
+   a rdf:Property;
+   rdfs:domain :Citation;
+   rdfs:range  :Segment .
+   
+:hasValue
+  a rdf:Property ;
+  rdfs:domain :Segment.
+  
+:hassegText
+   a rdf:Property ;
+  rdfs:domain :Segment.
+
+:hasSegmentInterne
+ a rdf:Property ;
+  rdfs:domain :Segment.
+  
+:hasSection
+	a rdf:Property;
+	rdfs:domain :Chapitre;
+    rdfs:range  :Section.
+	
+:refers_to
+	a rdf:Property;
+	 rdfs:domain :Chapitre;
+	 rdfs:domain :Citation;
+     rdfs:range  :Poisson.
+	
+:is_identified_by 
+	a rdf:Property;
+	rdfs:domain :Poisson.
+	
+:hasParagraph
+	a rdf:Property;
+	rdfs:domain :Section;
+	rdfs:domain :Paragraphe.
+	
+:hasCitationText
+	a rdf:Property;
+	 rdfs:domain :Citation.
+	
+:hasNote a rdf:Property;
+      rdfs:domain :Citation;
+   rdfs:comments "contient une note ou une annotation".
+
+:hasName
+  a rdf:Property.
+  
+:hasLabel
+  a rdf:Property.
+  
+:hasEditor
+  a rdf:Property;
+   rdfs:domain :TitleStatement ;
+   rdfs:range  :Editor.
+  
+:hasSponsor
+  a rdf:Property;
+   rdfs:domain :TitleStatement.
+  
+:hasFunder
+  a rdf:Property;
+   rdfs:domain :TitleStatement.
+  
+:hasPrincipalFunder
+  a rdf:Property;
+   rdfs:domain :TitleStatement.
+  
+:hasResponsableStatement
+  a rdf:Property;
+   rdfs:domain :TitleStatement.
+  
+:hasEditionStatement
+  a rdf:Property;
+  rdfs:domain :Header.
+  
+:hasEdition
+  a rdf:Property;
+  rdfs:domain :EditionStatement.
+  
+:hasExtent
+  a rdf:Property;
+  rdfs:domain :Header;
+  rdfs:comment "décrit la taille approximative d’un texte stocké sur son support, numérique ou non numérique, exprimé dans une unité quelconque appropriée.".
+  
+:hasPublisher
+	a rdf:Property;
+	rdfs:domain :Header.
+	
+:hasDistributor
+	a rdf:Property.
+	
+:hasPublicationPlace
+	a rdf:Property;
+	rdfs:domain :PublicationStatment.
+	
+:hasAdress
+	a rdf:Property;
+	rdfs:domain :PublicationStatment.
+	
+:hasSourceDescription
+	a rdf:Property;
+	rdfs:domain :Header;
+	 rdfs:range :SourceDescription.
+:hasbib 
+	a rdf:Property;
+	rdfs:domain :SourceDescription.
+
+:hasProjectDescription
+	a rdf:Property;
+	rdfs:domain :Header.
+	
+:hasProfileDescription
+	a rdf:Property;
+	 rdfs:domain :Header;
+	 rdfs:range :ProfileDescription.
+	
+:hasCreation
+	a rdf:Property;
+	 rdfs:domain :ProfileDescription.
+	
+:hasLanguage 
+   a rdf:Property;
+   rdfs:domain :ProfileDescription;
+   rdfs:comments " décrit les langues, variétés de langues, registres, dialectes, etc. présents à l’intérieur d’un texte".
+   
+:hasFront
+	a rdf:Property;
+	 rdfs:domain :Texte;
+	  rdfs:range :Front.
+	
+:hasTitlePage
+	a rdf:Property;
+	 rdfs:domain :Front;
+	 rdfs:range   :TitlePage.
+	
+:hasByLine
+	a rdf:Property;
+	 rdfs:domain :Front;
+	 rdfs:range   :ByLine.
+:hasZoonyme
+	a rdf:Property;
+	.
+:hasLongevity
+	a rdf:Property;
+	.
+:hasFrequency
+	a rdf:Property;
+	.
+:hasAnatomicalPart
+	a rdf:Property;
+	.
+:hasTaille
+	a rdf:Property;
+	.
+:tei:hasCroissance
+	a rdf:Property;
+	.
+:hasDimension
+	a rdf:Property;
+	.
+
+
+  

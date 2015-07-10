@@ -5,6 +5,10 @@
 @prefix crm: <http://www.cidoc-crm.org/rdfs/cidoc_crm_v6.0-draft-2015January.rdfs> .
 
 
+
+
+
+
 <http://azkar.musee_Ontology.fr/rr/#Verney>
 	a foaf:Person;
 	foaf:gender "male";
@@ -59,6 +63,7 @@
 	a amo:SceneMusee;
 	amo:SceneNumber "8";
 	dc:title "tranchee";
+	amo:compose_of_object [<http://azkar.musee_Ontology.fr/rr/#Mitrailleuse_de_Saint-Etienne> <http://azkar.musee_Ontology.fr/rr/#Mortier de tranchée rudimentaire> ];
 	amo:historicalMessage "D abord simples protections contre le feu de l ennemi, les tranchées deviennent un lieu de vie pendant quatre ans pour des millions d hommes.Au début de la guerre de position, les Français pensent que la guerre va très vite se terminer et gardent l esprit offensif. Leurs tranchées sont peu ou pas organisées, elles sont censées n être que provisoires. Du côté des Allemands, c’est l inverse, les tranchées sont un lieu de vie qu’il convient d’aménager pour durer dans le temps. Cette différence se retrouve à travers le mépris que les Français, qui changent souvent de secteur, ont pour leurs lieux de vie, alors que les Allemands, plus sédentaires, sont plus vigilants àl aménagement et au respect de leurs tranchées. Il faudra donc du temps pour que l’état-major français prenne conscience de l’importance des tranchées et donne des instructions pour creuser, étayer, aménager… les positions. L aménagement des tranchées est dans aucun doute le reflet de la mentalité de ses occupants".
 	
 
@@ -76,6 +81,8 @@
 	dc:title "parcours thematique";
 	amo:description "parcours thematique";
 	amo:compose_of_scene [ <http://azkar.musee_Ontology.fr/rr/#guerreNouvelle>  <http://azkar.musee_Ontology.fr/rr/#mobilisation>] .
+
+
 
 <http://azkar.musee_Ontology.fr/rr/#maquetteDuMuseeDeMeaux>
 	a amo:maquette;
