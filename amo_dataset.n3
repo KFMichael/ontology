@@ -8,7 +8,7 @@
 
 <http://azkar.musee_Ontology.fr/rr/#Verney>
 	a foaf:Person;
-	foaf:gender "male";
+	foaf:gender <http://dbpedia.org/page/Male>;
 	foaf:firstName "Jean-Pierre";	
 	foaf:lastName "Verney";
 	foaf:name "Verney";
@@ -17,28 +17,28 @@
 	dc:description <https://fr.wikipedia.org/wiki/Jean-Pierre_Verney> ;
 	foaf:img <https://upload.wikimedia.org/wikipedia/commons/6/6d/Jean-Pierre_Verney_par_Claude_Truong-Ngoc_avril_2014.jpg?download> .
 	
-	
+
 <http://azkar.musee_Ontology.fr/rr/#La_tranchee>
-	a amo:SceneMusee;
+	a amo:SceneMusee, amo:ZoneChronologique;
 	amo:hasSceneNumber "8";
-	amo:hasType "zone chronologique";
 	dc:title "tranchee";
 	amo:hasDescription "la scène de la  tranchée est une reproduction en miniature d'une tranchée francaise en face d'une tranchée allemande, séparée par un no man's land";
 	amo:composeOfObject <http://azkar.musee_Ontology.fr/rr/#Mitrailleuse_de_Saint_Etienne>, <http://azkar.musee_Ontology.fr/rr/#Mortier_de_tranchée_rudimentaire> ;
-	amo:hasHistoricalMessage "D abord simples protections contre le feu de l ennemi, les tranchées deviennent un lieu de vie pendant quatre ans pour des millions d hommes.Au début de la guerre de position, les Français pensent que la guerre va très vite se terminer et gardent l esprit offensif. Leurs tranchées sont peu ou pas organisées, elles sont censées n être que provisoires. Du côté des Allemands, c’est l inverse, les tranchées sont un lieu de vie qu’il convient d’aménager pour durer dans le temps. Cette différence se retrouve à travers le mépris que les Français, qui changent souvent de secteur, ont pour leurs lieux de vie, alors que les Allemands, plus sédentaires, sont plus vigilants àl aménagement et au respect de leurs tranchées. Il faudra donc du temps pour que l’état-major français prenne conscience de l’importance des tranchées et donne des instructions pour creuser, étayer, aménager… les positions. L aménagement des tranchées est dans aucun doute le reflet de la mentalité de ses occupants".
+	amo:hasHistoricalMessage "D abord simples protections contre le feu de l ennemi, les tranchées deviennent un lieu de vie pendant quatre ans pour des millions d hommes.Au début de la guerre de position, les Français pensent que la guerre va très vite se terminer et gardent l esprit offensif. Leurs tranchées sont peu ou pas organisées, elles sont censées n être que provisoires. Du côté des Allemands, c’est l inverse, les tranchées sont un lieu de vie qu’il convient d’aménager pour durer dans le temps. Cette différence se retrouve à travers le mépris que les Français, qui changent souvent de secteur, ont pour leurs lieux de vie, alors que les Allemands, plus sédentaires, sont plus vigilants àl aménagement et au respect de leurs tranchées. Il faudra donc du temps pour que l’état-major français prenne conscience de l’importance des tranchées et donne des instructions pour creuser, étayer, aménager… les positions. L aménagement des tranchées est dans aucun doute le reflet de la mentalité de ses occupants";
+	dc:description <http://fr.dbpedia.org/page/Bataille_de_la_Tranch%C3%A9e>.
 	
 
 	<http://azkar.musee_Ontology.fr/rr/#Mortier_de_tranchée_rudimentaire>
 		a amo:ObjectMusee;
 		amo:hasObjectNumber "3";
 		dc:title "mortier";
-		amo:hasDomaine "vie militaire", "france";
+		amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
 		amo:hasDiscipline "ethnologie";
 		amo:hasDenomination "mortier";
 		amo:hasTypologie "type cellerier";
-		dc:description "Ce mortier de tranchée de type Cellerier est une petit mortier rudimentaire. Il est réalisé à partir d'un obus allemand de 77 transformé en bouche à feu et monté sur un socle en bois Il possède également son projectile " ;
-		amo:consists_of "metal","bois";
-		amo:hasTechnique "métal";
+		dc:description <http://fr.dbpedia.org/page/Mortier_(arme)>, "Ce mortier de tranchée de type Cellerier est une petit mortier rudimentaire. Il est réalisé à partir d'un obus allemand de 77 transformé en bouche à feu et monté sur un socle en bois Il possède également son projectile " ;
+		amo:consists_of <http://dbpedia.org/page/Metal> ,"bois";
+		amo:hasTechnique <http://dbpedia.org/page/Metal>;
 		amo:hasPrefixeMusee "CAPM";
 		amo:hasNumeroInventaire "2006.1.6514";
 		amo:hasHeight "34";
@@ -50,13 +50,13 @@
 		a amo:ObjectMusee;
 		amo:hasObjectNumber "5";
 		dc:title "Mitrailleuse_de_Saint-Etienne";
-		amo:hasDomaine "vie militaire", "autriche hongrie";
+		amo:hasDomaine "vie militaire", <http://dbpedia.org/resource/Austria-Hungary>;
 		amo:hasDiscipline "ethnologie";
 		amo:hasDenomination "mitrailleuse";
 		amo:hasTypologie "modèle 1907";
 		dc:description "avec trépied catégorie de l arme : 8ème catégorie (neutralisée)N°Serie: 4629, Il s agit du modèle 1907 modifié en 1912. En novembre 1918, l infanterie italienne s approprie cette mitrailleuse qui sera encore utilisée dans l entre-deux guerres." ;
-		amo:consists_of "metal";
-		amo:hasTechnique "métal";
+		amo:consists_of <http://dbpedia.org/page/Metal>;
+		amo:hasTechnique <http://dbpedia.org/page/Metal>;
 		amo:hasPrefixeMusee "CAPM";
 		amo:hasNumeroInventaire "2006.1.13623";
 		amo:hasHeight "54";
@@ -67,9 +67,8 @@
 
 
 <http://azkar.musee_Ontology.fr/rr/#Marne_14>
-	a amo:SceneMusee;
+	a amo:SceneMusee , amo:ZoneChronologique;
 	amo:hasSceneNumber "7";
-	amo:hasType "zone chronologique";
 	dc:title "marne 14";
 	amo:hasDescription "ensemble de mannequin allant à la bataille de marne 14";
 	amo:hasHistoricalMessage "Le 3 septembre 1914, Gallieni apprend que les troupes allemandes changent de direction, tout à la poursuite des armées françaises et du corps expéditionnaire anglais. Une partie de l’armée allemande prend le risque de manœuvrer au nord de Paris et présente dangereusement son flanc droit. Pour Gallieni, la chance est unique, une attaque s’impose. Il s’organise pour attaquer le lendemain. Reste à convaincre Joffrecar l’enjeu est décisif. Une décision trop rapide,un mauvais choix et le résultat serait funeste. Mais Joffre se décide. La bataille ne se fera pas derrière la Seine mais bien devant Paris.".
@@ -77,7 +76,7 @@
 	<http://azkar.musee_Ontology.fr/rr/#General_d_infanterie>
 		a amo:Uniforme;
 		amo:hasDenomination "General d'infanterie";
-		amo:hasOrigin "France";
+		amo:hasOrigin <http://dbpedia.org/page/France>;
 		amo:isLocatedInScene <http://azkar.musee_Ontology.fr/rr/#Marne_14>;
 		amo:formedByObject 	<http://azkar.musee_Ontology.fr/rr/#Kepi>,<http://azkar.musee_Ontology.fr/rr/#Dolman_de_général_de_brigade>,<http://azkar.musee_Ontology.fr/rr/#Culotte_pour_officier_dinfanterie> .
 		
@@ -85,7 +84,7 @@
 		<http://azkar.musee_Ontology.fr/rr/#Kepi>
 			a amo:ObjectMusee;
 			dc:title "Kepi";
-			amo:hasDomaine "vie militaire", "France";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
 			amo:hasDiscipline "ethnologie";
 			amo:hasDenomination "Kepi";
 			amo:hasTypologie "modèle 14-18";
@@ -100,7 +99,7 @@
 		<http://azkar.musee_Ontology.fr/rr/#Dolman_de_général_de_brigade>
 			a amo:ObjectMusee;
 			dc:title "Dolman de général de brigade";
-			amo:hasDomaine "vie militaire", "France";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
 			amo:hasDiscipline "ethnologie";
 			amo:hasDenomination "Dolman de général de brigade";
 			amo:hasTypologie " 14-18";
@@ -115,7 +114,7 @@
 		<http://azkar.musee_Ontology.fr/rr/#Culotte_pour_officier_dinfanterie>
 			a amo:ObjectMusee;
 			dc:title "Culotte pour officier d’infanterie";
-			amo:hasDomaine "vie militaire", "France";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
 			amo:hasDiscipline "ethnologie";
 			amo:hasDenomination "Culotte pour officier d’infanterie";
 			amo:hasTypologie " 14-18";

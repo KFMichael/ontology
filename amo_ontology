@@ -99,6 +99,14 @@
   rdfs:range :SceneMusee.
 
 
+:ZoneChronologique a rdfs:Class ;
+  rdfs:label "Zone chronologique";
+  rdfs:comment "cette classe représente une zone chronologique = ensemble de scènes placées de façon chronologique".
+
+
+:ZoneThematique a rdfs:Class ;
+  rdfs:label "Zone thématique";
+  rdfs:comment "cette classe représente une zone thématique : ensemble de scène où les objets sont regroupés en fonction d'un thème".
 
 :SceneMusee a rdfs:Class ;
   rdfs:label "Scene";
