@@ -53,46 +53,53 @@
   rdfs:comment "cette propriété représente le numéro d'inventaire d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
 
-:has_height a rdf:Property ;
+:hasHeight a rdf:Property ;
+  rdfs:label "Height";
+  rdfs:comment "cette propriété représente la hauteur d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
 
-:has_depth a rdf:Property ;
+:hasDepth a rdf:Property ;
+  rdfs:label "Depth";
+  rdfs:comment "cette propriété représente la profondeur d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
 
-:has_width a rdf:Property ;
+:hasWidth a rdf:Property ;
+  rdfs:label "Width";
+  rdfs:comment "cette propriété représente la largeur d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
 
 
 
-:SceneMusee a rdfs:Class .
+:SceneMusee a rdfs:Class ;
+  rdfs:label "Scene";
+  rdfs:comment "cette classe représente une scène dans un musée".
 
-:SceneNumber a rdf:Property ;
+:hasSceneNumber a rdf:Property ;
+  rdfs:label "numero de scène";
+  rdfs:comment "cette propriété représente le numéro d'une scène dans le musée";
   rdfs:domain :SceneMusee.
-:historicalMessage a rdf:Property ;
+
+:hasHistoricalMessage a rdf:Property ;
+  rdfs:label "message historique";
+  rdfs:comment "cette propriété représente le message historique transmis au travers de la scène dans le musée";
+  rdfs:domain :SceneMusee.
+
+:hasType a rdfs:Property ;
+  rdfs:label "type de scène";
+  rdfs:comment "cette propriété représente le type auquel appartient une scène du musée : chronologique ou thématique ";
   rdfs:domain :SceneMusee.
 
 
-:zoneChronologique a rdfs:Class .
-:zoneThematique a rdfs:Class .
-:maquette  a rdfs:Class .
+:hasDescription a rdf:Property ;
+  rdfs:label "description ";
+  rdfs:comment "cette propriété permet de décrire une scène ";
+  rdfs:domain :SceneMusee.
 
 
-:description a rdf:Property ;
-  rdfs:domain :zoneChronologique;
-  rdfs:domain :zoneThematique;
-  rdfs:domain :maquette.
-
-:compose_of_zone a rdf:Property ;
-  rdfs:domain :maquette ;
-  rdfs:range :zoneThematique ;
-  rdfs:range :zoneChronologique .
-
-:compose_of_scene a rdf:Property ;
-  rdfs:domain :zoneThematique ;
-  rdfs:domain :zoneChronologique ;
-  rdfs:range :SceneMusee .
   
-:compose_of_object a rdf:Property ;
+:composeOfObject a rdf:Property ;
+  rdfs:label "type de scène";
+  rdfs:comment "cette propriété représente  la relation entre un objet du musée et d'une scène : Une scène est composée de plusieurs objets";
   rdfs:domain :SceneMusee ;
   rdfs:range :ObjectMusee .
   
