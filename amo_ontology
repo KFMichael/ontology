@@ -4,32 +4,64 @@
 
 
 
-:ObjectMusee a rdfs:Class.
+:ObjectMusee a rdfs:Class;
+  rdfs:label "ObjectMusee";
+  rdfs:comment "Représente la classe décrivant un objet du musée. ".
 
-:ObjectNumber a rdf:Property ;
+:hasObjectNumber a rdf:Property ;
+  rdfs:label "hasObjectNumber";
+  rdfs:comment "cette propriété représente le numéro idientifiant un objet dans le musée";
   rdfs:domain :ObjectMusee .
-:domaine a rdf:Property ;
+
+:hasDomaine a rdf:Property ;
+  rdfs:label "domaine";
+  rdfs:comment "cette propriété représente le nom de domaine auquel appartient un objet dans le musée";
   rdfs:domain :ObjectMusee .
-:discipline a rdf:Property ;
+
+:hasDiscipline a rdf:Property ;
+  rdfs:label "discipline";
+  rdfs:comment "cette propriété représente la discipline a laquelle appartient  un objet dans le musée";
   rdfs:domain :ObjectMusee .
-:denomination a rdf:Property ;
+
+:hasDenomination a rdf:Property ;
+  rdfs:label "denomination";
+  rdfs:comment "cette propriété représente la dénomitation d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
-:typologie a rdf:Property ;
+
+:hasTypologie a rdf:Property ;
+  rdfs:label "typologie";
+  rdfs:comment "cette propriété représente la typologie a laquelle appartient  un objet dans le musée";
   rdfs:domain :ObjectMusee .
-:consists_of a rdf:Property ;
+
+:consistsOf a rdf:Property ;
+  rdfs:label "consistsOf";
+  rdfs:comment "cette propriété indique de quoi l'objet du musée est constitué";
   rdfs:domain :ObjectMusee .
-:technique a rdf:Property ;
+
+:hasTechnique a rdf:Property ;
+  rdfs:label "discipline";
+  rdfs:comment "cette propriété indique la technique utilisée dans la fabrication  d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
-:prefixe_musee a rdf:Property ;
+
+:hasPrefixeMusee a rdf:Property ;
+  rdfs:label "préfixe Musee";
+  rdfs:comment "cette propriété représente le préfixe du musée auquel l'objet appartient ";
   rdfs:domain :ObjectMusee .
-:numero_inventaire a rdf:Property ;
+
+:hasNumeroInventaire a rdf:Property ;
+  rdfs:label "Numéro inventaire";
+  rdfs:comment "cette propriété représente le numéro d'inventaire d'un objet dans le musée";
   rdfs:domain :ObjectMusee .
+
 :has_height a rdf:Property ;
   rdfs:domain :ObjectMusee .
+
 :has_depth a rdf:Property ;
   rdfs:domain :ObjectMusee .
+
 :has_width a rdf:Property ;
   rdfs:domain :ObjectMusee .
+
 
 
 :SceneMusee a rdfs:Class .
