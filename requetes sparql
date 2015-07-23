@@ -1,0 +1,40 @@
+pour selectionner tous les triplets
+
+SELECT ?x
+WHERE { ?x a ?u }
+
+--------------------------------------------------------------------
+
+pour selectionner tous les objets du musée
+
+SELECT ?x
+WHERE { ?x  a <http://azkar.musee_Ontology.fr/schema#ObjectMusee>   }
+
+
+---------------------------------------------------------------------
+
+pour selectionner tous les uniformes
+
+SELECT ?x
+WHERE { ?x  a <http://azkar.musee_Ontology.fr/schema#Uniforme>   } 
+
+----------------------------------------------------------------------
+
+pour selectionner toutes les scènes 
+
+SELECT ?x
+WHERE { ?x  a <http://azkar.musee_Ontology.fr/schema#SceneMusee>   } 
+
+-----------------------------------------------------------------------
+
+pour selectionner toutes les zones chronologiques 
+
+SELECT ?x
+WHERE { ?x  a <http://azkar.musee_Ontology.fr/schema#ZoneChronologique>   } 
+
+---------------------------------------------------------------------------
+
+pour selectionner toutes les zones thématiques 
+
+SELECT ?x
+WHERE { ?x  a <http://azkar.musee_Ontology.fr/schema#ZoneThematique>   } 
