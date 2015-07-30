@@ -68,8 +68,30 @@
     rdfs:comment "cette propriété représente la largeur d'un objet dans le musée";
     rdfs:domain :ObjectMusee .
 
+  :hasTopicInterest a rdf:Property ;
+    rdfs:label "Interested topics";
+    rdfs:comment "cette propriété représente les sujets interessants liés à un objet dans le musée";
+    rdfs:domain :ObjectMusee .
 
+  :hasGeoMuseeLocation a rdf:Property ;
+    rdfs:label "emplacement géographique dans le musée";
+    rdfs:comment "cette propriété représente la largeur d'un objet dans le musée";
+    rdfs:domain :ObjectMusee ;
+    rdfs:range :MuseeLocation.
 
+:MuseeLocation a rdfs:Class ;
+  rdfs:label "Musée location" ;
+  rdfs:comment "Cette classe représente l'emplacement géographique d'un objet au sein du musée ".
+
+  :hasLat a rdf:Property ;
+    rdfs:label "la latitude" ;
+    rdfs:comment "la latitude de l'objet" ;
+    rdfs:domain :MuseeLocation.
+
+  :hasLong a rdf:Property ;
+    rdfs:label "la longitude" ;
+    rdfs:comment "la longitude de l'objet" ;
+    rdfs:domain :MuseeLocation.
 
 :Uniforme a rdfs:Class ;
   rdfs:label "Uniforme" ;
@@ -85,7 +107,6 @@
     rdfs:comment "le pays d'origine de l'uniforme" ;
     rdfs:domain :Uniforme.
 
-
 :formedByObject a rdf:Property ;
   rdfs:label "formée par";
   rdfs:comment "La relation entre un objet du musée et un uniforme : Un uniforme est composé de plusieurs objets du musée ";
@@ -98,11 +119,9 @@
   rdfs:domain :Uniforme ;
   rdfs:range :SceneMusee.
 
-
 :ZoneChronologique a rdfs:Class ;
   rdfs:label "Zone chronologique";
   rdfs:comment "cette classe représente une zone chronologique = ensemble de scènes placées de façon chronologique".
-
 
 :ZoneThematique a rdfs:Class ;
   rdfs:label "Zone thématique";
@@ -132,9 +151,7 @@
     rdfs:label "description";
     rdfs:comment "cette propriété permet de décrire une scène ";
     rdfs:domain :SceneMusee.
-
-
-  
+ 
 :composeOfObject a rdf:Property ;
   rdfs:label "composé d'objet";
   rdfs:comment "cette propriété représente  la relation entre un objet du musée et d'une scène : Une scène est composée de plusieurs objets";
