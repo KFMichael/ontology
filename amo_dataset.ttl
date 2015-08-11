@@ -41,6 +41,7 @@
 		amo:hasTechnique <http://dbpedia.org/page/Metal>;
 		amo:hasPrefixeMusee "CAPM";
 		amo:hasNumeroInventaire "2006.1.6514";
+		amo:hasTopicInterest <https://fr.wikipedia.org/wiki/Pistolet-mitrailleur>, <https://fr.wikipedia.org/wiki/Tranch%C3%A9e>;
 		amo:hasHeight "34";
 		amo:hasDepth "22";
 		amo:hasWidth "46".
@@ -59,11 +60,10 @@
 		amo:hasTechnique <http://dbpedia.org/page/Metal>;
 		amo:hasPrefixeMusee "CAPM";
 		amo:hasNumeroInventaire "2006.1.13623";
+		amo:hasTopicInterest <https://fr.wikipedia.org/wiki/Pistolet-mitrailleur>, <https://fr.wikipedia.org/wiki/Guerre_de_tranch%C3%A9es>;
 		amo:hasHeight "54";
 		amo:hasDepth "54";
 		amo:hasWidth "147".
-
-
 
 
 <http://azkar.musee_Ontology.fr/rr/#Marne_14>
