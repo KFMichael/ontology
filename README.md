@@ -8,8 +8,8 @@ AZKAR
 ### TODO's
 
 [ ] STEP 1 >>> Définition des objets et scènes à décrire :
-- [x] Le musée
-- [x] Les scènes 
-  - [x] Marne 14
-  - [x] La tranchée 
+- [ ] Le musée
+	- [ ] Les scènes 
+  		- [ ] Marne 14
+  		- [ ] La tranchée 
 	
