@@ -16,68 +16,75 @@
   :hasDomaine a rdf:Property ;
     rdfs:label "domaine";
     rdfs:comment "cette propriété représente le nom de domaine auquel appartient un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasDiscipline a rdf:Property ;
     rdfs:label "discipline";
     rdfs:comment "cette propriété représente la discipline a laquelle appartient  un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasDenomination a rdf:Property ;
     rdfs:label "denomination";
     rdfs:comment "cette propriété représente la dénomitation d'un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasTypologie a rdf:Property ;
     rdfs:label "typologie";
     rdfs:comment "cette propriété représente la typologie a laquelle appartient  un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee;
+    rdfs:range rdf:rdfs:Literal .
 
   :consistsOf a rdf:Property ;
     rdfs:label "consistsOf";
     rdfs:comment "cette propriété indique de quoi l'objet du musée est constitué";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee;
+    rdfs:range rdf:rdfs:Literal .
 
   :hasTechnique a rdf:Property ;
     rdfs:label "discipline";
     rdfs:comment "cette propriété indique la technique utilisée dans la fabrication  d'un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasPrefixeMusee a rdf:Property ;
     rdfs:label "préfixe Musee";
     rdfs:comment "cette propriété représente le préfixe du musée auquel l'objet appartient ";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee ;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasNumeroInventaire a rdf:Property ;
     rdfs:label "Numéro inventaire";
     rdfs:comment "cette propriété représente le numéro d'inventaire d'un objet dans le musée";
-    rdfs:domain :ObjectMusee .
-
-  :hasHeight a rdf:Property ;
-    rdfs:label "Height";
-    rdfs:comment "cette propriété représente la hauteur d'un objet dans le musée";
-    rdfs:domain :ObjectMusee .
-
-  :hasDepth a rdf:Property ;
-    rdfs:label "Depth";
-    rdfs:comment "cette propriété représente la profondeur d'un objet dans le musée";
-    rdfs:domain :ObjectMusee .
-
-  :hasWidth a rdf:Property ;
-    rdfs:label "Width";
-    rdfs:comment "cette propriété représente la largeur d'un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee.
 
   :hasTopicInterest a rdf:Property ;
     rdfs:label "Interested topics";
     rdfs:comment "cette propriété représente les sujets interessants liés à un objet dans le musée";
-    rdfs:domain :ObjectMusee .
+    rdfs:domain :ObjectMusee.
 
-  :hasGeoMuseeLocation a rdf:Property ;
-    rdfs:label "emplacement géographique dans le musée";
+
+:ObjectDimension a rdfs:Class ;
+  rdfs:label "Les dimensions d un objet du musée " ;
+  rdfs:comment "Cette classe représente les dimensions physique d'un objet au sein du musée ".
+
+  :hasHeight a rdf:Property ;
+    rdfs:label "Height";
+    rdfs:comment "cette propriété représente la hauteur d'un objet dans le musée";
+    rdfs:domain :ObjectDimension .
+
+  :hasDepth a rdf:Property ;
+    rdfs:label "Depth";
+    rdfs:comment "cette propriété représente la profondeur d'un objet dans le musée";
+    rdfs:domain :ObjectDimension .
+
+  :hasWidth a rdf:Property ;
+    rdfs:label "Width";
     rdfs:comment "cette propriété représente la largeur d'un objet dans le musée";
-    rdfs:domain :ObjectMusee ;
-    rdfs:range :MuseeLocation.
+    rdfs:domain :ObjectDimension.
+
 
 :MuseeLocation a rdfs:Class ;
   rdfs:label "Musée location" ;
@@ -93,6 +100,7 @@
     rdfs:comment "la longitude de l'objet" ;
     rdfs:domain :MuseeLocation.
 
+
 :Uniforme a rdfs:Class ;
   rdfs:label "Uniforme" ;
   rdfs:comment "Cette classe représente l'uniforme porté par un mannequin du musée".
@@ -100,32 +108,25 @@
   :hasDenomination a rdf:Property ;
     rdfs:label "denomination" ;
     rdfs:comment "le nom de l'uniforme" ;
-    rdfs:domain :Uniforme.
+    rdfs:domain :Uniforme;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasOrigin a rdf:Property ;
     rdfs:label "origine" ;
     rdfs:comment "le pays d'origine de l'uniforme" ;
-    rdfs:domain :Uniforme.
+    rdfs:domain :Uniforme ;
+    rdfs:range rdf:rdfs:Literal.
 
-:formedByObject a rdf:Property ;
-  rdfs:label "formée par";
-  rdfs:comment "La relation entre un objet du musée et un uniforme : Un uniforme est composé de plusieurs objets du musée ";
-  rdfs:domain :Uniforme ;
-  rdfs:range :ObjectMusee .
-
-:isLocatedInScene a rdf:Property ;
-  rdfs:Label " un uniforme est situé dans une scene" ;
-  rdfs:comment "La relation entre un uniforme et une scène : Un uniforme est situé dans une scène";
-  rdfs:domain :Uniforme ;
-  rdfs:range :SceneMusee.
 
 :ZoneChronologique a rdfs:Class ;
   rdfs:label "Zone chronologique";
   rdfs:comment "cette classe représente une zone chronologique = ensemble de scènes placées de façon chronologique".
 
+
 :ZoneThematique a rdfs:Class ;
   rdfs:label "Zone thématique";
   rdfs:comment "cette classe représente une zone thématique : ensemble de scène où les objets sont regroupés en fonction d'un thème".
+
 
 :SceneMusee a rdfs:Class ;
   rdfs:label "Scene";
@@ -139,22 +140,48 @@
   :hasHistoricalMessage a rdf:Property ;
     rdfs:label "message historique";
     rdfs:comment "cette propriété représente le message historique transmis au travers de la scène dans le musée";
-    rdfs:domain :SceneMusee.
-
-  :hasType a rdfs:Property ;
-    rdfs:label "type de scène";
-    rdfs:comment "cette propriété représente le type auquel appartient une scène du musée : chronologique ou thématique ";
-    rdfs:domain :SceneMusee.
-
+    rdfs:domain :SceneMusee;
+    rdfs:range rdf:rdfs:Literal.
 
   :hasDescription a rdf:Property ;
     rdfs:label "description";
     rdfs:comment "cette propriété permet de décrire une scène ";
-    rdfs:domain :SceneMusee.
+    rdfs:domain :SceneMusee;
+    rdfs:range rdf:rdfs:Literal.
+
+
+
+
+:formedByObject a rdf:Property ;
+  rdfs:label "formée par";
+  rdfs:comment "La relation entre un objet du musée et un uniforme : Un uniforme est composé de plusieurs objets du musée ";
+  rdfs:domain :Uniforme ;
+  rdfs:range :ObjectMusee.
+
+
+:isLocatedInScene a rdf:Property ;
+  rdfs:Label " un uniforme est situé dans une scene" ;
+  rdfs:comment "La relation entre un uniforme et une scène : Un uniforme est situé dans une scène";
+  rdfs:domain :Uniforme ;
+  rdfs:range :SceneMusee.
+
  
 :composeOfObject a rdf:Property ;
   rdfs:label "composé d'objet";
   rdfs:comment "cette propriété représente  la relation entre un objet du musée et d'une scène : Une scène est composée de plusieurs objets";
-  rdfs:domain :SceneMusee ;
-  rdfs:range :ObjectMusee .
+  rdfs:domain :SceneMusee;
+  rdfs:range :ObjectMusee.
+
+
+:hasGeoMuseeLocation a rdf:Property ;
+  rdfs:label "emplacement géographique dans le musée";
+  rdfs:comment "cette propriété représente l'emplacement en terme de coordonnées géographique d'un objet dans le musée";
+  rdfs:domain :ObjectMusee ;
+  rdfs:range :MuseeLocation.
   
+  
+:hasDimension a rdf:Property ;
+  rdfs:label "les dimensions d'un objet dans le musée";
+  rdfs:comment "cette propriété représente les dimensions d'un objet dans le musée";
+  rdfs:domain :ObjectMusee ;
+  rdfs:range :ObjectDimension.
