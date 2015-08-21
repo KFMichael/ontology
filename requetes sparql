@@ -38,3 +38,51 @@ pour selectionner toutes les zones thématiques
 
 SELECT ?x
 WHERE { ?x  a <http://azkar.musee_Ontology.fr/schema#ZoneThematique>   } 
+
+------------------------------------------------------------------------------
+pour selectionner tous les objects d'une scène : Tranchée 
+
+@prefix amo: <http://azkar.musee_Ontology.fr/schema#> 
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+SELECT *
+WHERE { ?x a amo:SceneMusee.
+?x dc:title "tranchee".
+?x  amo:composeOfObject ?y.
+}
+
+
+---------------------------------------------------------------------------------
+pour selectionner tous les uniformes d'une scène numéro : 7 
+
+@prefix amo: <http://azkar.musee_Ontology.fr/schema#> 
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+SELECT *
+WHERE { ?x a amo:Uniforme.
+?x  amo:isLocatedInScene ?y.
+?y amo:hasSceneNumber "7"
+}
+
+----------------------------------------------------------------------------------
+Pour selectionner tous les objects composants un uniforme : general d'infanterie
+
+@prefix amo: <http://azkar.musee_Ontology.fr/schema#> 
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+SELECT *
+WHERE { ?x a amo:Uniforme.
+?x amo:hasDenomination "General d'infanterie".
+?x  amo:formedByObject ?y.
+}
+
+-------------------------------------------------------------------------------------
+pour selectionner tous les objects qui parlent de  : <https://fr.wikipedia.org/wiki/Tranch%C3%A9e>
+
+@prefix amo: <http://azkar.musee_Ontology.fr/schema#> 
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+SELECT *
+WHERE { ?x a amo:ObjectMusee.
+?x  amo:hasTopicInterest <https://fr.wikipedia.org/wiki/Tranch%C3%A9e>.
+}
