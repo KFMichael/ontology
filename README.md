@@ -7,7 +7,9 @@ AZKAR
 ce dépot contient :
 - --> amo_ontology.rdfs : qui correspond à la descrption de l'ontoloie
 - --> amo_dataset.ttl : qui correspond à la base de connaissance [ description des objets + scènes et relations entre eux ]
-- --> requetes sparql : qui est un fichier dans lequel est écrit un certain nombre de requêtes exécutable sur corèse
+- --> requetes sparql : qui est un fichier dans lequel est écrit un certain nombre de requêtes exécutable sur corèse 
+
+
  -----------------------------------------------------------------------------
 Avant d'exécuter les requêtes , il faut charger les fichiers rdfs et ttl dans corèse.
 
