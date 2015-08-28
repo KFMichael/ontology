@@ -126,4 +126,144 @@
 			amo:hasDepth "41";
 			amo:hasWidth "117".
 
+	
+	<http://azkar.musee_Ontology.fr/rr/#Officier_d_infanterie>
+		a amo:Uniforme;
+		amo:hasDenomination "Officier d'infanterie (sous lieutenant)";
+		amo:hasOrigin <http://dbpedia.org/page/France>;
+		amo:isLocatedInScene <http://azkar.musee_Ontology.fr/rr/#Marne_14>;
+		amo:formedByObject 	<http://azkar.musee_Ontology.fr/rr/#Kepi_2>,<http://azkar.musee_Ontology.fr/rr/#Vareuse_d'officier_d_infanterie>,<http://azkar.musee_Ontology.fr/rr/#tunique_M>,<http://azkar.musee_Ontology.fr/rr/#Pantalon_cullotte_M> .
+		
+
+		<http://azkar.musee_Ontology.fr/rr/#Kepi_2>
+			a amo:ObjectMusee;
+			dc:title "Kepi";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "Kepi";
+			amo:hasTypologie "modèle 14-18";
+			dc:description "Képi haut de forme" ;
+			amo:consists_of "laine";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.237";
+			amo:hasHeight "6";
+			amo:hasDepth "4";
+			amo:hasWidth "17".
+
+		<http://azkar.musee_Ontology.fr/rr/#Vareuse_d'officier_d_infanterie>
+			a amo:ObjectMusee;
+			dc:title "Dolman de général de brigade";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "Dolman de général de brigade";
+			amo:hasTypologie " 14-18";
+			dc:description "Dolman de général de brigade" ;
+			amo:consists_of "Dolman";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.11866";
+			amo:hasHeight "10";
+			amo:hasDepth "8";
+			amo:hasWidth "9".
+
+		<http://azkar.musee_Ontology.fr/rr/#tunique_M>
+			a amo:ObjectMusee;
+			dc:title "Culotte pour officier d’infanterie";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "Culotte pour officier d’infanterie";
+			amo:hasTypologie " 14-18";
+			dc:description "Culotte pour officier d’infanterie" ;
+			amo:consists_of "culotte";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.11750";
+			amo:hasHeight "6";
+			amo:hasDepth "1";
+			amo:hasWidth "7".
+
+		<http://azkar.musee_Ontology.fr/rr/#Pantalon_cullotte_M>
+			a amo:ObjectMusee;
+			dc:title "Pantalon-culotte M 1888 pour officier d’infanterie";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "Pantalon culotte";
+			amo:hasTypologie " 14-18";
+			dc:description "Pantalon culotte M 1888" ;
+			amo:consists_of "culotte";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.11748";
+			amo:hasHeight "1";
+			amo:hasDepth "774";
+			amo:hasWidth "1".
+
+		
+
+
+	<http://azkar.musee_Ontology.fr/rr/#Capitaine_au_Hampshire_Regiment>
+		a amo:Uniforme;
+		amo:hasDenomination "Capitaine au Hampshire Regiment";
+		amo:hasOrigin <http://fr.dbpedia.org/page/Cat%C3%A9gorie:Ville_du_Royaume-Uni>;
+		amo:isLocatedInScene <http://azkar.musee_Ontology.fr/rr/#Marne_14>;
+		amo:formedByObject 	<http://azkar.musee_Ontology.fr/rr/#Casquette>,<http://azkar.musee_Ontology.fr/rr/#Vareuse_M_drap_serge_kaki>,<http://azkar.musee_Ontology.fr/rr/#Chemise_M>,<http://azkar.musee_Ontology.fr/rr/#Pantalon_cullotte_M> .
+		
+
+		<http://azkar.musee_Ontology.fr/rr/#Casquette>
+			a amo:ObjectMusee;
+			dc:title "Kepi";
+			amo:hasDomaine "vie militaire",<http://fr.dbpedia.org/page/Cat%C3%A9gorie:Ville_du_Royaume-Uni>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "casquette";
+			amo:hasTypologie "modèle 14-18";
+			dc:description "casquette" ;
+			amo:consists_of "cuir";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.733";
+			amo:hasHeight "1";
+			amo:hasDepth "2";
+			amo:hasWidth "3".
+
+		<http://azkar.musee_Ontology.fr/rr/#Vareuse_M_drap_serge_kaki>
+			a amo:ObjectMusee;
+			dc:title "Dolman de général de brigade";
+			amo:hasDomaine "vie militaire",<http://fr.dbpedia.org/page/Cat%C3%A9gorie:Ville_du_Royaume-Uni>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "vareuse M drap sergé kaki";
+			amo:hasTypologie " 14-18";
+			dc:description "vareuse M drap sergé kaki" ;
+			amo:consists_of "laine";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.1.2246";
+			amo:hasHeight "10";
+			amo:hasDepth "8";
+			amo:hasWidth "9".
+
+		<http://azkar.musee_Ontology.fr/rr/#Chemise_M>
+			a amo:ObjectMusee;
+			dc:title "Chemise_M";
+			amo:hasDomaine "vie militaire",<http://fr.dbpedia.org/page/Cat%C3%A9gorie:Ville_du_Royaume-Uni>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "Chemise M";
+			amo:hasTypologie " 14-18";
+			dc:description "Chemise M" ;
+			amo:consists_of "laine";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.11255";
+			amo:hasHeight "6";
+			amo:hasDepth "1";
+			amo:hasWidth "7".
+
+		<http://azkar.musee_Ontology.fr/rr/#Pantalon_cullotte_M>
+			a amo:ObjectMusee;
+			dc:title "Pantalon-culotte M 1888 pour officier d’infanterie";
+			amo:hasDomaine "vie militaire",<http://dbpedia.org/page/France>;
+			amo:hasDiscipline "ethnologie";
+			amo:hasDenomination "Pantalon culotte";
+			amo:hasTypologie " 14-18";
+			dc:description "Pantalon culotte M 1888" ;
+			amo:consists_of "culotte";
+			amo:hasPrefixeMusee "CAPM";
+			amo:hasNumeroInventaire "2006.1.12279";
+			amo:hasHeight "1";
+			amo:hasDepth "774";
+			amo:hasWidth "1".
+
 		
